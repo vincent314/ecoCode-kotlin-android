@@ -30,7 +30,7 @@ private const val GOOD_IMPORT = "com.google.android.gms.location"
 private const val ERROR_MESSAGE =
     "Use com.google.android.gms.location instead of android.location to maximize battery life."
 
-@Rule(key = "EC517")
+@Rule(key = "GCI517")
 class FusedLocationCheck : AbstractCheck() {
 
     override fun visitImportList(importList: KtImportList, data: KotlinFileContext?) {

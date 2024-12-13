@@ -34,7 +34,7 @@ private const val IMPORT_STR_BLE = "android.bluetooth.le"
 private const val ERROR_MESSAGE = "You are using Bluetooth. Did you take a look at the Bluetooth Low Energy API?"
 private const val GOOD_PRACTICE_MESSAGE = "Using android.bluetooth.le.* is a good practice."
 
-@Rule(key = "EC518")
+@Rule(key = "GCI518")
 class BluetoothBleCheck : AbstractCheck() {
 
     override fun visitImportList(importList: KtImportList, data: KotlinFileContext?) {

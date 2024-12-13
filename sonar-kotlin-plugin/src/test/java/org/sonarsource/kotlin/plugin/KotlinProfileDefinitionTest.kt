@@ -46,6 +46,6 @@ internal class KotlinProfileDefinitionTest {
         assertThat(profile.rules().size).isGreaterThan(MIN_RULE_COUNT)
         assertThat(profile.rules())
             .extracting<String> { obj: BuiltInQualityProfilesDefinition.BuiltInActiveRule -> obj.ruleKey() }
-            .contains("EC518", "EC517")
+            .contains("GCI518", "GCI517")
     }
 }
