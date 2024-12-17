@@ -2,16 +2,16 @@
 ======================================
 
 Mobile apps running on top of battery-limited, android-powered devices are more than others concerned by the reduction 
-of their environmental footprint. Hence, we created `ecoCode android for Kotlin`, the version of ecoCode project fully 
+of their environmental footprint. Hence, we created `creedengo android for Kotlin`, the version of creedengo project fully 
 dedicated to the Android Kotlin projects. 
 
 It provides static code analyzers to highlight code structures that may have a negative ecological impact: energy over-consumption, 
 "fatware", shortening devices' lifespan, etc.
 
-ecoCode android for Kotlin is based on an evolving catalog of [best practices for Android](https://github.com/cnumr/best-practices-mobile#-android-platform). 
+creedengo android for Kotlin is based on an evolving catalog of [best practices for Android](https://github.com/cnumr/best-practices-mobile#-android-platform). 
 A SonarQube plugin then implements this catalog as rules for scanning your native Android projects. 
 
-To work on Android projects developed in Java, you can use the [ecoCode Android plugin for Java projects](https://github.com/green-code-initiative/ecoCode-android).
+To work on Android projects developed in Java, you can use the [creedengo Android plugin for Java projects](https://github.com/green-code-initiative/creedengo-android).
 
 This project is based on [SonarSource - sonar-kotlin project](https://github.com/SonarSource/sonar-kotlin), fork of the version of the 2023/07/03.
 

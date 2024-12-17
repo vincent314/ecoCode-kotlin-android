@@ -30,11 +30,11 @@ private const val MIN_RULE_COUNT = 0
 internal class KotlinProfileDefinitionTest {
 
     @Test
-    fun `Ecocode_profile is a valid json file`() {
+    fun `Creedengo_profile is a valid json file`() {
         val classLoader = KotlinProfileDefinition::class.java.classLoader
         val jsonContent = classLoader.getResource(KotlinProfileDefinition.PATH_TO_JSON)?.readText()
         val json = Gson().fromJson(jsonContent, JsonObject::class.java)
-        assertThat(json.get("name").asString).isEqualTo("ecoCode (Android)")
+        assertThat(json.get("name").asString).isEqualTo("creedengo (Android)")
         assertThat(json.get("ruleKeys").asJsonArray).hasSizeGreaterThan(MIN_RULE_COUNT)
     }
 
@@ -42,7 +42,7 @@ internal class KotlinProfileDefinitionTest {
     fun profile() {
         val context = BuiltInQualityProfilesDefinition.Context()
         KotlinProfileDefinition().define(context)
-        val profile = context.profile("kotlin", "ecoCode (Android)")
+        val profile = context.profile("kotlin", "creedengo (Android)")
         assertThat(profile.rules().size).isGreaterThan(MIN_RULE_COUNT)
         assertThat(profile.rules())
             .extracting<String> { obj: BuiltInQualityProfilesDefinition.BuiltInActiveRule -> obj.ruleKey() }

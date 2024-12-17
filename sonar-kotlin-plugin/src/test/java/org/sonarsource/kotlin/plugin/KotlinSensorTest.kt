@@ -77,7 +77,7 @@ internal class KotlinSensorTest : AbstractSensorTest() {
 
         val descriptor = DefaultSensorDescriptor()
         sensor(checkFactory).describe(descriptor)
-        assertThat(descriptor.name()).isEqualTo("ecoCode Kotlin Sensor")
+        assertThat(descriptor.name()).isEqualTo("creedengo Kotlin Sensor")
         assertThat(descriptor.languages()).isEqualTo(listOf("kotlin"))
     }
 

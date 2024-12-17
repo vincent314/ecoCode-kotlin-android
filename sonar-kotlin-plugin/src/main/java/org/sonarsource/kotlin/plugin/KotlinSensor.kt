@@ -58,7 +58,7 @@ class KotlinSensor(
     override fun describe(descriptor: SensorDescriptor) {
         descriptor
             .onlyOnLanguage("kotlin")
-            .name("ecoCode Kotlin Sensor")
+            .name("creedengo Kotlin Sensor")
     }
 
     override fun getExecuteContext(

@@ -27,7 +27,7 @@ class KotlinPlugin : Plugin {
     companion object {
         // Global constants
         const val REPOSITORY_NAME = "SonarAnalyzer"
-        const val PROFILE_NAME = "ecoCode (Android)"
+        const val PROFILE_NAME = "creedengo (Android)"
         const val SKIP_UNCHANGED_FILES_OVERRIDE = "sonar.kotlin.skipUnchanged"
         const val GRADLE_PROJECT_ROOT_PROPERTY = "sonar.kotlin.gradleProjectRoot"
     }
